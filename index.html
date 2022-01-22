@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <script>
+      var p = 0;
+      function doTheThing() {
+        p = p+1;
+        document.getElementById("numberthing").innerHTML = "Things: " + p;
+      }
+    </script>
     <h1>A Simple Clicker Game</h1>
     <h2>Subtitle To Be Determined</h2>
-    <p>You have 0 noun_plural_object</p>
-    <button type="button">Click Me!</button>
+    <p id="numberthing">Things: 0</p>
+    <button type="button" onclick="doTheThing()">Click Me!</button>
     <button type="button" disabled>Don't Click Me!</button>
     <a href=https://poop3.github.io/simple-clicker-game/>Go to the same page you're already on</a>
   </body>
